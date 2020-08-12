@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 11, 2020 12:45:07 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Student" table="Student" schema="dbo" catalog="QLSV" optimistic-lock="version">
+        <id name="idSt" type="string">
+            <column name="idST" length="20" />
+            <generator class="assigned" />
+        </id>
+        <property name="nameSt" type="string">
+            <column name="nameST" length="100" not-null="true" />
+        </property>
+        <property name="emailSt" type="string">
+            <column name="emailST" length="100" not-null="true" />
+        </property>
+        <property name="phoneNumberSt" type="string">
+            <column name="phoneNumberST" length="11" not-null="true" />
+        </property>
+        <property name="sexSt" type="boolean">
+            <column name="sexST" not-null="true" />
+        </property>
+        <property name="addressSt" type="string">
+            <column name="addressST" length="200" not-null="true" />
+        </property>
+        <property name="imageSt" type="string">
+            <column name="imageST" length="300" not-null="true" />
+        </property>
+        <set name="grades" table="Grade" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="idST" length="20" />
+            </key>
+            <one-to-many class="entity.Grade" />
+        </set>
+    </class>
+</hibernate-mapping>

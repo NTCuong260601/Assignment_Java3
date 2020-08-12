@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Aug 11, 2020 12:45:07 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="entity.Grade" table="Grade" schema="dbo" catalog="QLSV" optimistic-lock="version">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="student" class="entity.Student" fetch="select">
+            <column name="idST" length="20" />
+        </many-to-one>
+        <property name="gradeE" type="java.lang.Double">
+            <column name="gradeE" precision="53" scale="0" />
+        </property>
+        <property name="gradeIm" type="java.lang.Double">
+            <column name="gradeIM" precision="53" scale="0" />
+        </property>
+        <property name="gradeP" type="java.lang.Double">
+            <column name="gradeP" precision="53" scale="0" />
+        </property>
+    </class>
+</hibernate-mapping>
