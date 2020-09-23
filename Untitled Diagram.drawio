@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2020-09-23T04:06:48.561Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/89.0.124 Chrome/83.0.4103.124 Safari/537.36" etag="T8TrwTns1BMOnNpmdoPe" version="13.7.4" type="github">
+<mxfile host="app.diagrams.net" modified="2020-09-23T04:10:28.157Z" agent="5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) coc_coc_browser/89.0.124 Chrome/83.0.4103.124 Safari/537.36" etag="WwtQnLia0P1OwSgvTN0h" version="13.7.4" type="github">
   <diagram id="R2lEEEUBdFMjLlhIrx00" name="Page-1">
     <mxGraphModel dx="2019" dy="627" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0" extFonts="Permanent Marker^https://fonts.googleapis.com/css?family=Permanent+Marker">
       <root>
@@ -259,19 +259,25 @@
         <mxCell id="NY_QWn5QvtJODzJ5zNdS-108" value="Chức vụ" style="ellipse;shape=doubleEllipse;margin=3;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="370" y="10" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NY_QWn5QvtJODzJ5zNdS-111" value="Nhân thân" style="shape=ext;margin=3;double=1;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="560" y="70" width="100" height="40" as="geometry" />
-        </mxCell>
         <mxCell id="NY_QWn5QvtJODzJ5zNdS-113" value="&lt;span style=&quot;border-bottom: 1px dotted&quot;&gt;Mã NT&lt;/span&gt;" style="ellipse;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
           <mxGeometry x="490" width="100" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="NY_QWn5QvtJODzJ5zNdS-115" value="n" style="edgeStyle=none;shape=link;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;strokeWidth=2;" edge="1" parent="1" source="NY_QWn5QvtJODzJ5zNdS-114" target="NY_QWn5QvtJODzJ5zNdS-111">
-          <mxGeometry x="1" y="10" relative="1" as="geometry">
-            <mxPoint x="-1" as="offset" />
+        <mxCell id="NY_QWn5QvtJODzJ5zNdS-118" value="Có" style="shape=associativeEntity;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="450" y="70" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NY_QWn5QvtJODzJ5zNdS-123" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=2;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="NY_QWn5QvtJODzJ5zNdS-118">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="330" as="sourcePoint" />
+            <mxPoint x="560" y="89.99999999999989" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="NY_QWn5QvtJODzJ5zNdS-114" value="Có" style="shape=rhombus;double=1;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
-          <mxGeometry x="450" y="60" width="80" height="60" as="geometry" />
+        <mxCell id="NY_QWn5QvtJODzJ5zNdS-124" value="n" style="resizable=0;html=1;align=right;verticalAlign=bottom;" connectable="0" vertex="1" parent="NY_QWn5QvtJODzJ5zNdS-123">
+          <mxGeometry x="1" relative="1" as="geometry">
+            <mxPoint x="-7" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NY_QWn5QvtJODzJ5zNdS-126" value="Nhân thân" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="560" y="70" width="100" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
